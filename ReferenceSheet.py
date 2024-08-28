@@ -487,16 +487,6 @@ else:
 
 string = "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi"
 
-vowels = "aeiou"
-
-if string in vowels:
-    print(string.rindex(string[-1]))
-else:
-    print("no vowels in string")
-    
-    
-
-#string = "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi"
 last_index = -1
 
 if string.lower().rfind("a") > last_index:
