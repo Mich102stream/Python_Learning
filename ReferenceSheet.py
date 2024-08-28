@@ -467,6 +467,47 @@ if (num1 + num2) % 2 == 0:
     print("Success")
 else:
     print("Failure")
+
+
+# Challenge 7
+
+# Create a variable called num. Check if the number is a palindrome (look the same forward as it does backwards eg. 1001 and 20202).
+
+num = 1007
+
+if str(num) == str(num)[::-1]: # str(num) converts the number to a string and str(num)[::-1] reverses the string and compares it to the original string.
+    print("Palindrome")
+else:
+    print("Not a Palindrome")
+
+
+# Challenge 8
+
+# Take the string "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi". find the index of the last vowel in the string.
+
+string = "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi"
+
+vowels = "aeiou"
+
+if string in vowels:
+    print(string.rindex(string[-1]))
+else:
+    print("no vowels in string")
+    
     
 
-    
+#string = "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi"
+last_index = -1
+
+if string.lower().rfind("a") > last_index:
+    last_index = string.lower().rfind("a")
+if string.lower().rfind("e") > last_index:
+    last_index = string.lower().rfind("e")
+if string.lower().rfind("i") > last_index:
+    last_index = string.lower().rfind("i")
+if string.lower().rfind("o") > last_index:
+    last_index = string.lower().rfind("o")
+if string.lower().rfind("u") > last_index:
+    last_index = string.lower().rfind("u")
+
+print(f"The index of the last vowel is {last_index}")
