@@ -383,6 +383,34 @@ else:
 
 
 
+# Python Input function
+
+# input() function is used to take input from the user.
+
+name = input("What is your name? ") # input() function takes a string as an argument which is displayed to the user.
+
+print("Hello " + name) # prints Hello followed by the name entered by the user.
+
+age = input("How old are you? ") # input() function takes a string as an argument which is displayed to the user.
+
+print("You are " + age + " years old") # prints You are followed by the age entered by the user.
+
+birth_year = input("Enter your birth year: ") # This input() function is creating a variable for the year of birth.
+
+age = 2024 - int(birth_year) # This line of code is calculating the age by subtracting the birth year from the current year and converting the result to an integer.
+
+print(age)
+
+# For converting values in variables.
+
+# int() function is used to convert a string to an integer.
+
+# float() function is used to convert a string to a float.
+
+# str() function is used to convert a number to a string.
+
+# bool() function is used to convert a number to a boolean.
+
 
 # Challenge 1
 
@@ -501,3 +529,4 @@ if string.lower().rfind("u") > last_index:
     last_index = string.lower().rfind("u")
 
 print(f"The index of the last vowel is {last_index}")
+
