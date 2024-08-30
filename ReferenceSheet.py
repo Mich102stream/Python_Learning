@@ -274,9 +274,6 @@ first_name = "Michael"
 
 
 
-
-
-
 # Python If:Else Statements
 
 music = "classical"
@@ -529,4 +526,66 @@ if string.lower().rfind("u") > last_index:
     last_index = string.lower().rfind("u")
 
 print(f"The index of the last vowel is {last_index}")
+
+
+
+# Functions in Python
+
+# Functions are blocks of code that are designed to do one job. They are executed when they are called.
+
+
+# Activity 1
+
+# Write an If Statement that checks if the items on the top row meet the winning condition.
+
+space1 = "X"
+space2 = "O"
+space3 = "X"
+space4 = "O"
+space5 = "X"
+space6 = "O"
+space7 = "X"
+space8 = "O"
+space9 = "X"
+
+print("")
+print("       |       |     ")
+print(f"   {space1}   |   {space2}   |   {space3}   ")
+print("       |       |     ")
+print("----------------------")
+print("       |       |     ")
+print(f"   {space4}   |   {space5}   |   {space6}   ")
+print("       |       |     ")
+print("----------------------")
+print("       |       |     ")
+print(f"   {space7}   |   {space8}   |   {space9}   ")
+print("       |       |     ")
+print("")
+
+if space1 == space2 == space3:
+    print("Winner")
+else:
+    print("No Winner")
+
+if space1 and space2 and space3 == "X":
+    print("Winner")
+elif space1 and space2 and space3 == "O":
+    print("Winner")
+else:
+    print("No Winner")
+
+
+# Activity 2
+
+# Write an If Statement that checks the age of a cinema goers, and display the ticket prices:
+
+age = int(input("How old are you? "))
+
+if age < 18:
+    print("Child Ticket price £8")
+elif age > 60:
+    print("Senior Ticket price £7.50")
+else:
+    print("Adult Ticket price £10.95")
+    
 
