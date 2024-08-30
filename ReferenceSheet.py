@@ -539,7 +539,7 @@ print(f"The index of the last vowel is {last_index}")
 # Write an If Statement that checks if the items on the top row meet the winning condition.
 
 space1 = "X"
-space2 = "O"
+space2 = "X"
 space3 = "X"
 space4 = "O"
 space5 = "X"
@@ -588,4 +588,235 @@ elif age > 60:
 else:
     print("Adult Ticket price £10.95")
     
+
+
+# Functions can be called multiple times and can be reused in different parts of the code.
+
+# function_name(parameters)
+
+# some functions are already defined
+
+# print() function is used to print a message to the console.
+
+# input() function is used to take input from the user.
+
+# len() function is used to return the length of a string.
+
+# lower() method is used to convert a string to lowercase.
+
+
+# def press_grind_beans():
+#     print("Grinding for 20 seconds")
+
+# press_grind_beans()
+
+
+
+# Parameters are used to pass information
+
+# def cash_withdrawal(amount, accnum):
+#     print(f"Withdrawing £{amount} from account number {accnum}")
+
+# cash_withdrawal(300, 50449921)
+
+# This will print Withdrawing £300 from account number 50449921
+
+
+# def cash_withdrawal(amount, accnum):
+#     print(f"Withdrawing £{amount} from account number {accnum}")
+
+# cash_withdrawal(300, 50449921)
+# cash_withdrawal(30, 50449921)
+# cash_withdrawal(200, 50449921)
+
+# This will print 3 lines of text with the amount and account number.
+
+
+
+
+
+# Activity 3
+
+# Create a function that takes two parameters for a coffee order (size, type of drink) and prints them out in a sentence.
+
+def coffee_order(size, drink):
+    print(f"You have ordered a {size} {drink}")
+    print("    (  )   (   )  )")
+    print("     ) (   )  (  (")
+    print("     ( )  (    ) )")
+    print("     _____________")
+    print("    <_____________> ___")
+    print("    |             |/ _ \ ")
+    print("    |              | | |")
+    print("    |              |_| |")
+    print(" ___|             |\___/")
+    print("/    \___________/    \ ")
+    print("\_____________________/")
+    
+coffee_order("large", "latte")
+
+
+
+
+# Challenge 1
+
+# order_count = 0
+
+# def take_order(topping):
+#     global order_count
+#     print("Pizza with {}".format(topping))
+#     order_count += 1
+
+# take_order("Pineapple")
+
+# Edit the snippet above to include two or more parameters, a running order count that updates when the function is called and change the .format method to f string.
+
+order_count = 0
+
+def take_order(topping, size):
+    global order_count
+    print(f"Pizza with {topping} {size}")
+    order_count += 1
+
+take_order("Pineapple", "large")
+take_order("Pepperoni", "small")
+take_order("Mushroom", "medium")
+
+print(order_count)
+
+# three parameters
+
+order_count = 0
+
+def take_order(topping, size, price):
+    global order_count
+    print(f"Pizza with {topping} {size} {price}")
+    order_count += 1
+
+take_order("Pineapple", "large", "£10")
+take_order("Pepperoni", "small", "£7")
+take_order("Mushroom", "medium", "£8")
+
+print(order_count)
+
+# added order count to the print statement
+
+order_count = 0+1
+
+def take_order(topping, size, price):
+    global order_count
+    print(f"Pizza with {topping} {size} {price} you are order {order_count}")
+    order_count += 1
+
+take_order("Pineapple", "large", "£10")
+take_order("Pepperoni", "small", "£7")
+take_order("Mushroom", "medium", "£8")
+
+print(order_count)
+
+
+# Challenge 2
+
+# Cash Machine takes an input of pin number and amount to withdraw. Print "Dispensing £{amount}" if the pin is correct and there is enough money and displays the new bank balance.
+
+# def cash_machine(pin, amount):
+#     if pin == 1234 and amount <= 100:
+#         print(f"Dispensing £{amount}")
+#     else:
+#         print("Incorrect pin or insufficient funds")
+
+# cash_machine(1234, 50)
+# cash_machine(1235, 200)
+# cash_machine(5234, 150)
+# cash_machine(1234, 150)
+
+
+pin = 1234
+pincode = int(input("Enter your pin: "))
+balance = 100
+cash_request = int(input("How much would you like to withdraw? "))
+new_balance = balance - cash_request
+
+
+def cash_machine(pin, amount):
+    if pincode == pin and amount <= balance:
+        print(f"Dispensing £{amount}")
+        print(f"Your new balance is £{new_balance}")
+    else:
+        print("Incorrect pin or insufficient funds")
+
+cash_machine(pin, cash_request)
+
+
+# Extra Reading - Return
+
+# Return is used to return a value from a function.
+
+# def add(num1, num2):
+#     return num1 + num2
+
+
+# result = add(10, 5)
+
+# print(result)
+
+# # This will print 15 as the function returns the sum of the two numbers.
+
+
+# def add_up(num1, num2):
+#   return num1 + num2
+
+
+# result = add_up(7, 3) # This will return 10 but without printing it to the console.
+# print(add_up(2, 5)) # This will return 7 and print it to the console.
+
+
+def multiply_by_nine_fifths(celsius):
+    return celsius * (9/5)
+
+def get_fahrenheit(celsius):
+    return multiply_by_nine_fifths(celsius) + 32
+
+print(f"The temperature is {get_fahrenheit(15)}°F") # This will print The temperature is 59.0°F
+
+
+
+# Global and local variables
+
+# Global variables are variables that are defined outside of a function and can be accessed by any function in the code.
+
+# Local variables are variables that are defined inside a function and can only be accessed by that function.
+
+# f = 0
+
+# def some_function():
+#     f = 1
+#     return f
+
+# print(f) # This will print 0 as the global variable f is accessed.
+
+# print(some_function()) # This will print 1 as the local variable f is accessed.
+
+# print(f) # This will print 0 as the global variable f is accessed.
+
+
+
+
+# Coffee Machine
+
+coffee_is_grinding = False
+
+def press_grind_beans():
+    global coffee_is_grinding
+    if coffee_is_grinding:
+        print("Stopping the grind")
+        coffee_is_grinding = False
+    else:
+        print("Grinding is in progress")
+        coffee_is_grinding = True
+        
+press_grind_beans() # This will print Grinding is in progress
+press_grind_beans() # This will print Stopping the grind
+
+
 
