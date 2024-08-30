@@ -820,3 +820,38 @@ press_grind_beans() # This will print Stopping the grind
 
 
 
+
+
+# Libraries in Python are collections of functions and methods that allow you to perform many actions without writing your own code.
+
+
+import random
+
+print(random.random()) # This will print a random number between 0 and 1.
+
+print(random.uniform(1, 10)) # This will print a random number between 1 and 10.
+
+print(random.randint(1, 10)) # This will print a random integer between 1 and 10.
+
+print(random.choice(["rock", "paper", "scissors"])) # This will print a random item from the list.
+
+
+
+from random import random, randint, uniform
+
+print(random()) # This will print a random number between 0 and 1.
+print(uniform(1, 10)) # This will print a random number between 1 and 10.
+print(randint(1, 10)) # This will print a random integer between 1 and 10.
+
+
+
+
+
+
+
+
+
+
+
+
+
