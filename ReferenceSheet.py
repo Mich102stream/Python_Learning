@@ -1035,3 +1035,22 @@ favourite_movies.extend(new_movies) # This will add the new movies to the list.
 print(favourite_movies) # This will print the updated list of favourite movies.
 
 
+
+# Extra Reading - Tuple in Python
+
+# Tuples are used to store multiple items in a single variable.
+
+# Tuples are created using parentheses ().
+
+# Tuples are immutable, meaning that the values inside a tuple cannot be changed or modified.
+
+# Create a tuple by using parentheses () and separating the items with commas.
+
+demo_tuple = ("apple", "banana", "cherry") # This is a tuple of fruits.
+
+print(demo_tuple) # This will print the tuple of fruits.
+
+# You cannot use methods to remove or add items to a tuple.
+
+# You can use the count() and index() methods to count the number of times a specified value appears in a tuple and to find the index of a specified value in a tuple.
+
