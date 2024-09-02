@@ -845,13 +845,193 @@ print(randint(1, 10)) # This will print a random integer between 1 and 10.
 
 
 
+import math
+
+print(math.pi) # This will print the value of pi.
+
+print(math.sqrt(16)) # This will print the square root of 16.
+
+print(math.floor(2.9)) # This will print the largest integer less than or equal to 2.9.
+
+print(math.ceil(2.1)) # This will print the smallest integer greater than or equal to 2.1.
+
+
+import datetime
+
+print(datetime.datetime.now()) # This will print the current date and time.
+
+print(datetime.datetime.now().year) # This will print the current year.
+
+print(datetime.datetime.now().month) # This will print the current month.
+
+print(datetime.datetime.now().day) # This will print the current day.
+
+print(datetime.datetime.now().hour) # This will print the current hour.
+
+print(datetime.datetime.now().minute) # This will print the current minute.
+
+
+
+# Python Lists
+
+# Lists are used to store multiple items in a single variable.
+
+# Lists are created using square brackets [].
+
+coffee_order = [ "Alex - Cortado", "Ben - Latte", "Charlie - Whatever's new" ]
+
+print(coffee_order) # This will print the list of coffee orders.
+
+
+
+# Make a list of your favorite songs
+
+favourite_songs = [ "Dio - Holy Diver", "Three Doors Down - Kryptonite", "Avenged Sevenfold - Hail to the King" ]
+
+print(favourite_songs) # This will print the list of favourite songs.
+
+
+
+# Accessing items in a list
+
+# You can access items in a list by referring to the index number.
+
+
+coffee_order = [ "Alex - Cortado", "Ben - Latte", "Charlie - Whatever's new" ]
+
+print(coffee_order[2]) # This will print Ben - Latte as it is the second item in the list.
+
+# index starts at 0, so the first item in the list is at index 0, the second item is at index 1, and so on.
+
+
+# Change the value of an item in a list
+
+
+coffee_order = ["Alex - Cortado", "Ben - Latte", "Charlie - Whatever's new"] # This is a list of coffee orders.
+
+coffee_order[1] = "Ann - Vanilla Latte" # This will change the value of the second item in the list to Ann - Vanilla Latte.
+
+print(coffee_order) # This will print the updated list of coffee orders.
+
+
+
+# Print length of a list
+
+
+coffee_order = ["Alex - Cortado", "Ben - Latte", "Charlie - Whatever's new"] # This is a list of coffee orders.
+
+print(len(coffee_order)) # This will print the length of the list which is 3.
+
+
+# Add items to a list
+
+# You can add items to a list using the append().
+
+# Append(data) is a method that adds an item to the end of a list. Replacing data with the item you want to add.
+
+
+coffee_order = ["Alex - Cortado", "Ben - Latte", "Charlie - Whatever's new"] # This is a list of coffee orders.
+
+coffee_order.append("Donna - Espresso") # This will add Donna - Espresso to the list.
+
+print(coffee_order) # This will print the updated list of coffee orders.
+
+
+
+favourite_songs = [ "Dio - Holy Diver", "Three Doors Down - Kryptonite", "Avenged Sevenfold - Hail to the King" ]
+
+favourite_songs.append("Three Doors Down - Duck and Run") # This will add Three Doors Down - Duck and Run to the list.
+
+print(favourite_songs) # This will print the list of favourite songs.
+
+
+
+# Removing items from a list
+
+# You can remove items from a list using the pop() method.
+
+# Pop() method removes the item at the specified index. If no index is specified, it removes the last item in the list.
+
+
+coffee_order = ["Alex - Cortado", "Ben - Latte", "Charlie - Whatever's new"] # This is a list of coffee orders.
+
+coffee_order.pop() # This will remove the last item in the list.
+
+print(coffee_order) # This will print the updated list of coffee orders.
+
+# If you do not specify an index, the pop() method will remove the last item in the list.
 
 
 
 
 
+# Challenge 1
+
+# Create a list of your favourite Websites (three of them), and then add another two once you've created the list. Then remove the last website.
+
+favourite_websites = [ "Google", "YouTube", "Github" ] # This is a list of favourite websites.
+
+favourite_websites.append("Twitch") # This will add Twitter to the list.
+
+favourite_websites.append("Stack Overflow") # This will add Instagram to the list.
+
+favourite_websites.pop() # This will remove the last item in the list.
+
+print(favourite_websites) # This will print the updated list of favourite websites.
 
 
 
+
+# Challenge 2
+
+
+# Research on the following methods, remove(), reverse(), sort(), count() and extend(). Then create a list of your favourite movies and use each of the methods.
+
+# Create a program to demostrate the use of each method, some of these you may need more than one example.
+
+
+# remove() method removes the first occurrence of the specified value.
+
+favourite_movies = [ "John Wick", "Bad Boys", "The 13th Warrior" ] # This is a list of favourite movies.
+
+favourite_movies.remove("Bad Boys") # This will remove Bad Boys from the list.
+
+print(favourite_movies) # This will print the updated list of favourite movies.
+
+
+# reverse() method reverses the order of the list.
+
+favourite_movies = [ "John Wick", "Bad Boys", "The 13th Warrior" ] # This is a list of favourite movies.
+
+favourite_movies.reverse() # This will reverse the order of the list.
+
+print(favourite_movies) # This will print the reversed list of favourite movies.
+
+
+# sort() method sorts the list in ascending order.
+
+favourite_movies = [ "John Wick", "Bad Boys", "The 13th Warrior" ] # This is a list of favourite movies.
+
+favourite_movies.sort() # This will sort the list in ascending order.
+
+print(favourite_movies) # This will print the sorted list of favourite movies.
+
+
+# count() method returns the number of times the specified value appears in the list.
+
+favourite_movies = [ "John Wick", "Bad Boys", "The 13th Warrior" ] # This is a list of favourite movies.
+
+print(favourite_movies.count("John Wick")) # This will print 1 as John Wick appears once in the list.
+
+
+# extend() method adds the specified list elements (or any iterable) to the end of the current list.
+
+favourite_movies = [ "John Wick", "Bad Boys", "The 13th Warrior" ] # This is a list of favourite movies.
+
+new_movies = [ "The Fifth Element", "The Matrix" ] # This is a list of new movies.
+
+favourite_movies.extend(new_movies) # This will add the new movies to the list.
+
+print(favourite_movies) # This will print the updated list of favourite movies.
 
 
