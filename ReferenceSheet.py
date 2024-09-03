@@ -1054,3 +1054,207 @@ print(demo_tuple) # This will print the tuple of fruits.
 
 # You can use the count() and index() methods to count the number of times a specified value appears in a tuple and to find the index of a specified value in a tuple.
 
+
+
+# Python Loops
+
+# Loops are used to repeat a block of code multiple times.
+
+# There are two types of loops in Python: for loops and while loops.
+
+# While loops are used to repeat a block of code as long as a specified condition is true.
+
+# For loops are used to iterate over a sequence (such as a list, tuple, dictionary, string, or range) and execute a block of code for each item in the sequence.
+
+
+# For Loops
+
+
+favourite_drinks = [ "Coffee", "Tea", "Water" ] 
+
+print(favourite_drinks[0])  # This will print Coffee.
+print(favourite_drinks[1])  # This will print Tea.
+print(favourite_drinks[2])  # This will print Water.
+
+
+favourite_drinks = [ "Coffee", "Tea", "Water" ] 
+
+for drink in favourite_drinks:   # This will print each item in the list.
+    print(drink)        # This will print Coffee, Tea, Water.
+    
+    
+for i in favourite_drinks: # i is a variable that represents each item in the list.
+    print (i)  # This will print Coffee, Tea, Water.
+
+   
+
+# For loop with range()
+
+for i in range(10):  # This will print the numbers from 0 to 9.
+    print(i)  # This will print 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+    
+    
+for i in range(2, 10):
+    print (i)  # This will print 2, 3, 4, 5, 6, 7, 8, 9.
+
+
+
+for i in range (0, 10, 2):
+    print (i) # This will print 0, 2, 4, 6, 8.
+    
+    
+    
+# Activity 1
+
+# create a list of 4 favourite films use a for loop to show each film in the list.
+
+# create a function called film_check() that checks if the 3rd film in the list is Ghostbusters. If it is print "Yay it's Ghostbusters" otherwise print "Boo, we want Ghostbusters".
+
+
+favourite_films = [ "John Wick", "Bad Boys", "The 13th Warrior", "The Matrix" ]
+
+for film in favourite_films:
+    print(film)
+
+def film_check():
+    if favourite_films[2] == "Ghostbusters":
+        print("Yay it's Ghostbusters")
+    else:
+        print("Boo, we want Ghostbusters")
+        
+film_check()
+
+
+# Activity 2
+
+# if you can create a for loop to print 0 - 9 on the terminal, how can you create one to count backwards from 9-0? Consider the different ways we've used range and give it a go.
+
+
+for i in range(9, -1 , -1):
+    print(i)  # This will print 9, 8, 7, 6, 5, 4, 3, 2, 1, 0.
+    
+
+
+
+# While Loops
+
+
+# While loops are used to repeat a block of code as long as a specified condition is true.
+
+num = 0
+
+while num < 10:  # While num is less than 10, the code block will be executed.
+    num + 10 # This will add 10 to num.
+    print(num)  # This will print 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+    
+
+
+import random
+
+rand_num = random.randint(0, 50)
+my_num = 50
+
+while rand_num != my_num:
+    print(rand_num)
+    rand_num = random.randint(0, 50)
+
+print(f"You've found the number {my_num}")
+
+
+
+
+
+# Challenge 1
+
+# Create a for loop that prints "Hello World" 13 times. Repeat this as a while loop that does the same thing.
+
+
+for i in range(13):
+    print("Hello World")
+    
+
+i = 0
+
+while i < 13:
+    print("Hello World")
+    i += 1
+
+
+
+# Challenge 2
+
+# Create a variable, then use a loop to generate a random number between 1 and 30 six times. For each random number generated, check if this number of divisible by 7 or not.
+
+import random
+
+
+for i in range(6):
+    rand_num = random.randint(1, 30)
+    if rand_num % 7 == 0:
+        print(f"{rand_num} is divisible by 7")
+    else:
+        print(f"{rand_num} is not divisible by 7")
+
+
+# create a while loop to randomly cycle through a list of card suits until a given card suit is reached. Create a variable called current_card and use a list method to randomly give it a value from the list every time the loop runs. Then compare the suit you want to find a stop while loop
+
+cards = ["Diamond", "Spade", "Club", "Heart"]
+
+current_card = random.choice(cards)
+
+while current_card != "Heart":
+    current_card = random.choice(cards)
+    print(current_card)
+
+print("Heart found")
+
+
+
+# Challenge 3
+
+# Create a loop that asks a user to input a number, then display the multiplication table for that number up to 12, example if i input 10, the output should be: 1 x 1 = 1, 1 x 2 = 2, 1 x 3 = 3, 1 x 4 = 4, 1 x 5 = 5, 1 x 6 = 6, 1 x 7 = 7, 1 x 8 = 8, 1 x 9 = 9, 1 x 10 = 10, 1 x 11 = 11, 1 x 12 = 12.
+
+# Include another loop that asks to start again
+
+
+while True:
+    num = int(input("Enter a number: "))
+    for i in range(1, 13):
+        print(f"{num} x {i} = {num * i}")
+    repeat = input("Do you want to try again? (y/n): ")
+    if repeat.lower() != "y":
+        break
+
+
+
+# Challenge 4
+
+# Create a program that checks whether all numbers between 1 and 20 are prime numbers or not.
+
+for i in range(1, 21):
+    if i > 1:
+        for j in range(2, i):
+            if i % j == 0:
+                print(f"{i} is not a prime number")
+                break
+        else:
+            print(f"{i} is a prime number")
+    else:
+        print(f"{i} is not a prime number")
+        
+
+
+# Find out the difference between a for loop, while loop and do while loop. Give examples of when you would use each one.
+
+
+# For loop is used when you know the number of times you want to execute a block of code. For example, when you want to iterate over a list or a range of numbers.
+
+# While loop is used when you want to repeat a block of code as long as a specified condition is true. For example, when you want to keep asking the user for input until they enter a valid value.
+
+# Do while loop is not available in Python, but you can achieve the same functionality using a while loop with a condition that is always true and a break statement to exit the loop when a specified condition is met.
+
+
+
+
+
+
